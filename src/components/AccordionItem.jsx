@@ -8,7 +8,7 @@ const [isActive,setIsActive] = useState(active)
     <div>
         <div className='flex flex-row py-2 px-6 items-center justify-between bg-slate-500 font-bold text-slate-100'>
             <div>{question}</div>
-            <div onClick={()=>setIsActive(!isActive)}>{(isActive === false ? <BsChevronDown /> : <BsChevronUp />)}</div>
+            <div onClick={()=>setIsActive(!isActive)}>{(isActive === false ? <BsChevronDown size={25}/> : <BsChevronUp size={25}/>)}</div>
         </div>
         <div className={(isActive===false ? "h-0 opacity-0 transition-all duration-500" : 'flex h-auto opacity-100 py-2 px-6 border-2 transition-all duration-500')}>{answer}</div>
     </div>
